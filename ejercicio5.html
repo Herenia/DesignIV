@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="js/jss.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="img/*">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jss.js"></script>
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
+  <script>
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header class="navbar_horizontal_header_label">
+    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav_horizontal_label">
+      <ul class="nav_ul_horizontal_label">
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h2 class="icon icon-lab">Java Script</h2>
+      <ul class="">
+        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="st-pusher">
+
+    <div class="st-content">
+      <!-- this is the wrapper for the content -->
+      <div class="st-content-inner">
+        <!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Guía de Ejercicios<span>Demostración de los mismos</span></h1>
+        </header>
+        <div class="main clearfix" data-effect="st-effect-1">
+          <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
+            <button data-effect="st-effect-1" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
+
+          </div>
+
+          <div class="columnText">
+
+            <h1>
+              <b>Demostraciones de los ejercicios</b>
+            </h1>
+            <p class="paragraph_excercises">Ejercicio 5</p>
+
+            <br>
+            <br>
+            </p>
+
+
+
+            <p>
+              En este ejercicio tenemos que crear una tabla<br>
+              con un color de fondo elegido por el <br>
+              usuario y escribirá un texto en ella con el <br>
+              color elegido por el usuario. Los colores y <br>
+              códigos son los siguientes:<br>
+            </p>
+            <img src="" alt="">
+
+            <p>
+              Si se teclea algún valor distinto a: R, A, Y ó V <br>
+              se definirán estos colores:<br>
+               para la tabla lightgrey y<br>
+               para el texto black.<br>
+              Los colores se pedirán mediante una orden prompt().<br>
+               Si no se elige uno de los colores<br>
+              se tomará un valor por defecto.<br>
+              Una vez que se sepan los colores se crearán la tabla<br>
+               y el texto con la orden<br>
+              document.write()<br>
+            </p>
+
+            <button onclick="mostrar()"> Respuesta </button>
+            <button onclick="cerrar()">Borrar</button>
+            <p id="parrafo2"></p>
+
+            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
+              <p> // definimos las variables y solicitamos al usuario que <br>
+                seleccione el color<br>
+                 var COLORTABLA= prompt("Elige el Color DE FONDO de la tabla: <br>
+                (R-rosa, A-azul claro, Y-amarillo claro, V-verde claro:", "R");<br>
+                 var COLORTEXTO = prompt("Elige el Color del TEXTO: (R-rojo, Aazul, Y-amarillo, V-verde:", "R");<br>
+                 switch(COLORTABLA){<br>
+                 case 'R':COLORTABLA="hotpink";<br>
+                 break;<br>
+                 case 'A':COLORTABLA="lightblue";<br>
+                 break;<br>
+                 case 'Y':COLORTABLA="lightyellow";<br>
+                 break;<br>
+                 case 'V':COLORTABLA="lightgreen";<br>
+                 break;<br>
+                 default:COLORTABLA="lightgrey";<br>
+                 }<br>
+                 switch(COLORTEXTO){<br>
+                 case 'R':COLORTEXTO="red";<br>
+                 break;<br>
+                 case 'A':COLORTEXTO="blue";<br>
+                 break;<br>
+                 case 'Y':COLORTEXTO="yellow";<br>
+                 break;<br>
+                 case 'V':COLORTEXTO="green";<br>
+                 break;<br>
+                 default:COLORTEXTO="black";<br>
+                 }<br>
+                 document.write("<CENTER><TABLE border=2 <br>
+                bgcolor="+COLORTABLA+">");<br>
+                 document.write("<TR><TD><FONT COLOR="+ COLORTEXTO + ">TEXTO <br>
+                CON COLOR");<br>
+                 document.write("</FONT></TD></TR>");<br>
+                 document.write("</TABLE>");<br>
+                 document.write("COLOR DE FONDO DE LA TABLA : "+ COLORTABLA + <br>
+                "<BR>");<br>
+                 document.write("COLOR DEL TEXTO : "+ COLORTEXTO +"</CENTER>");<br>
+
+              </p>
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- /main -->
+  </div>
+  <!-- /st-content-inner -->
+  </div>
+  <!-- /st-content -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/jss.js"></script>
+</body>
+
+</html>

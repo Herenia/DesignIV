@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="js/jss.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="img/*">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jss.js"></script>
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
+  <script>
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header class="navbar_horizontal_header_label">
+    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav_horizontal_label">
+      <ul class="nav_ul_horizontal_label">
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h2 class="icon icon-lab">Java Script</h2>
+      <ul class="">
+        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="st-pusher">
+
+    <div class="st-content">
+      <!-- this is the wrapper for the content -->
+      <div class="st-content-inner">
+        <!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Guía de Ejercicios<span>Demostración de los mismos</span></h1>
+        </header>
+        <div class="main clearfix" data-effect="st-effect-1">
+          <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
+            <button data-effect="st-effect-1" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
+
+          </div>
+
+          <div class="columnText">
+
+            <h1>
+              <b>Demostraciones de los ejercicios</b>
+            </h1>
+            <p class="paragraph_excercises">Ejercicio 4</p>
+
+            <br>
+            Programa que lea un número entero positivo y escriba la tabla de multiplicar de ese
+            número <br>
+            </p>
+
+
+            <p>
+
+            </p>
+
+
+            <button onclick="mostrar()"> Respuesta </button>
+            <button onclick="cerrar()">Borrar</button>
+            <p id="parrafo2"></p>
+
+            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
+              <p> var oculto=0;var oculto=0; <br>
+                var intentos=1;<br>
+                var N=0;<br>
+                oculto=Math.floor(Math.random()* 11); //genera un numero entre <br>
+               0 y 10<br>
+                while(intentos<6)<br>
+                {
+                N = parseInt(prompt("Introduce un numero entre 0 y 10 : 0)); ", <br>
+               
+                if (N==oculto)<br>
+                
+                {alert("<<ENHORABUENA HAS ADIVINADO EL NUMERO>>" + <br>
+               oculto + "!!!");<br>
+                break;}<br>
+                
+                else<br>
+                
+                {if (N>oculto) <br>
+                {alert("INTRODUCE UN NUMERO MENOR"); <br>
+                  }else{<br>
+                alert("INTRODUCE UN NUMERO MAYOR");}<br>
+                document.write("<BR><B>NUMERO TECLEADO: "+ N + ", <br>
+               INTENTO: " + intentos + "</B>");<br>
+                intentos ++;<br>
+                if (intentos==6)<br>
+                alert("LO SIENTO HAS PERDIDO");<br>
+                }<br>
+                }<br>
+               
+                var intentos=1;<br>
+                var N=0;<br>
+                oculto=Math.floor(Math.random()* 11); //genera un numero entre<br>
+                0 y 10<br>
+                while(intentos "<"6) { N=parseInt(prompt("Introduce un numero entre 0 y 10 : ", 0)); <br>
+                if (N==oculto)<br>
+                 {<br> 
+                alert(" ENHORABUENA HAS ADIVINADO EL NUMERO" +<br>
+                  oculto + "!!!");<br>
+                  break;<br>
+                  }<br>
+                  else<br>
+                  {<br>
+                  if (N>oculto)<br>
+                  {<br>
+                  alert("INTRODUCE UN NUMERO MENOR");<br>
+                    }<br>
+                    else<br>
+                    {<br>
+                    alert("INTRODUCE UN NUMERO MAYOR");<br>
+                      }<br>
+                      document.write("<BR><B>NUMERO TECLEADO: "+ N + ",<br>
+                        INTENTO: " + intentos + "</B>");<br>
+                      intentos ++;<br>
+                      if (intentos==6)<br>
+                      alert("LO SIENTO HAS PERDIDO");<br>
+                        }<br>
+                        }<br>
+              </p>
+              
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- /main -->
+  </div>
+  <!-- /st-content-inner -->
+  </div>
+  <!-- /st-content -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/jss.js"></script>
+</body>
+
+</html>

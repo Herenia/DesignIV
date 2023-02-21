@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="js/jss.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="img/*">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jss.js"></script>
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
+  <script>
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header class="navbar_horizontal_header_label">
+    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav_horizontal_label">
+      <ul class="nav_ul_horizontal_label">
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h2 class="icon icon-lab">Java Script</h2>
+      <ul class="">
+        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="st-pusher">
+
+    <div class="st-content">
+      <!-- this is the wrapper for the content -->
+      <div class="st-content-inner">
+        <!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Guía de Ejercicios<span>Demostración de los mismos</span></h1>
+        </header>
+        <div class="main clearfix" data-effect="st-effect-1">
+          <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
+            <button data-effect="st-effect-1" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
+
+          </div>
+
+          <div class="columnText">
+
+            <h1>
+              <b>Demostraciones de los ejercicios</b>
+            </h1>
+            <p class="paragraph_excercises">Ejercicio 6</p>
+
+            <br>
+            <p>
+              Escribir un programa que lea 10 números de teclado, <br>
+              los almacene en un array <br>
+              llamado números, y los escriba en orden inverso<br>
+              al que fueron introducidos. La entrada <br>
+              por teclado se hará con la orden prompt.<br>
+              <br>
+            </p>
+            <p>
+              Por ejemplo si escribimos los números <br>
+              1, 2, 3, 4, 5, 6, 7, 8, 9 y 0 la salida que se <br>
+              generará será la siguiente:<br>
+            </p>
+            <img src="" alt="">
+
+            <img src="" alt="">
+
+
+            <p>
+              Donde podemos ver una tabla HTML con los<br>
+              números introducidos inicialmente y otra<br>
+              tabla HTML con los números en orden inverso.<br>
+            </p>
+
+            Pistas:<br>
+            Para resolver el ejercicio una vez almacenamos<br>
+            los números en la tabla, la recorremos <br>
+            desde el primer elemento al último con un bucle<br>
+            for y visualizamos sus elementos. <br>
+            Para visualizarlos en orden inverso recorremos <br>
+            la tabla desde el último elemento al <br>
+            primero con otro bucle for.<br>
+            En ambos bucles los números se visualizan dentro <br>
+            de las celdas de una tabla HTML.<br>
+          
+
+            <button onclick="mostrar()"> Respuesta </button>
+            <button onclick="cerrar()">Borrar</button>
+            <p id="parrafo2"></p>
+
+            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
+              <p>
+                // definimos las variables y solicitamos al usuario que <br>
+                de las celdas de una tabla HTML.<br>
+                seleccione el color<br>
+                 var N;<br>
+                 var numeros = new Array(10);<br>
+                 // pedimos los numeros al usuario<br>
+                 for(i=0; i<10; i++)<br>
+                 numeros[i] = parseInt(prompt("Introduce número: "+ i, 0));<br>
+                 
+                 // pintamos la cebecera de la tabla<br>
+                 document.write("<CENTER><TABLE border=1 >")<br>
+                 document.write("<TR bgcolor='cyan'>")<br>
+                 document.write("<TH><B>NUMEROS INTRODUCIDOS INICIALMENTE: <br>
+                </B></TH></TR>");<br>
+                 document.write("</TABLE>");<br>
+                 document.write("<TABLE border=1 >")<br>
+                 document.write("<TR align='center'>");<br>
+                 
+                 // pintamos los numeros en una tabla<br>
+                 for (i=0; i<10; i++)<br>
+                 document.write("<TD>"+ numeros[i] + "</TD>");<br>
+                 
+                 // pintamos la cebecera de la tabla<br>
+                 document.write("</TR></TABLE>");<br>
+                 document.write("<BR><TABLE border=1 >")<br>
+                 document.write("<TR bgcolor='yellow'>")<br>
+                 document.write("<TH><B>NUMEROS EN ORDEN INVERSO: </B></TH> <br>
+                </TR>");<br>
+                 document.write("</TABLE>");<br>
+                 document.write("<TABLE border=1 >")<br>
+                 document.write("<TR align='center'>");<br>
+                 
+                 // pintamos los numeros en orden inverso al dado<br>
+                 for (i=9; i>=0; i--)<br>
+                 document.write("<TD>"+ numeros[i] + "</TD>");<br>
+                 
+                 document.write("</TR></TABLE></CENTER>");<br>
+
+              </p>
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- /main -->
+  </div>
+  <!-- /st-content-inner -->
+  </div>
+  <!-- /st-content -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/jss.js"></script>
+
+
+</body>
+
+</html>

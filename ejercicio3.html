@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="js/jss.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="img/*">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jss.js"></script>
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
+  <script>
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header class="navbar_horizontal_header_label">
+    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav_horizontal_label">
+      <ul class="nav_ul_horizontal_label">
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h2 class="icon icon-lab">Java Script</h2>
+      <ul class="">
+        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="st-pusher">
+
+    <div class="st-content">
+      <!-- this is the wrapper for the content -->
+      <div class="st-content-inner">
+        <!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Guía de Ejercicios<span>Demostración de los mismos</span></h1>
+        </header>
+        <div class="main clearfix" data-effect="st-effect-1">
+          <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
+            <button data-effect="st-effect-1" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
+
+          </div>
+
+          <div class="columnText">
+
+            <h1>
+              <b>Demostraciones de los ejercicios</b>
+            </h1>
+            <p class="paragraph_excercises">Ejercicio 3</p>
+
+            <br>
+            Escribir un programa que lea tres números (Num1, Num2 y Num3) <br>
+             y visualice el mayor de los tres. <br>
+            </p>
+
+            <button onclick="mostrar()"> Respuesta </button>
+            <button onclick="cerrar()">Borrar</button>
+            <p id="parrafo2"></p>
+
+            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
+              <p> var array = [true, 5, false, "hola", "adios", 2];<br>
+
+              // Cual de los 2 elementos de texto es mayor<br>
+              // Si el resultado es true, el primer texto es mayor<br>
+              var resultado = array[3] > array[4];<br>
+              alert(resultado);
+
+              // Combinar valores booleanos<br>
+              var valor1 = array[0];<br>
+              var valor2 = array[2];<br>
+
+              // Obtener un resultado TRUE<br>
+              var resultado = valor1 || valor2;<br>
+              alert(resultado);<br>
+
+              // Obtener un resultado FALSE<br>
+              resultado = valor1 && valor2;<br>
+              alert(resultado);<br>
+
+              // Operaciones matemáticas<br>
+              var num1 = array[1];<br>
+              var num2 = array[5];<br>
+
+              var suma = num1 + num2;<br>
+              alert(suma);<br>
+
+              var resta = num1 - num2;<br>
+              alert(resta);<br>
+
+              var multiplicacion = num1 * num2;<br>
+              alert(multiplicacion);<br>
+
+              var division = num1 / num2;<br>
+              alert(division);<br>
+
+              var modulo = num1 % num2;<br>
+              alert(modulo);<br>
+
+</p>
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- /main -->
+  </div>
+  <!-- /st-content-inner -->
+  </div>
+  <!-- /st-content -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/jss.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="js/jss.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="img/*">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jss.js"></script>
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
+  <script>
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header class="navbar_horizontal_header_label">
+    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav_horizontal_label">
+      <ul class="nav_ul_horizontal_label">
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
+        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h2 class="icon icon-lab">Java Script</h2>
+      <ul class="">
+        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 6</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 7</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 8</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 9</a></li>
+        <li><a class="icon icon-wallet" href="#">Ejercicio 10</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="st-pusher">
+
+    <div class="st-content">
+      <!-- this is the wrapper for the content -->
+      <div class="st-content-inner">
+        <!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Guía de Ejercicios<span>Demostración de los mismos</span></h1>
+        </header>
+        <div class="main clearfix" data-effect="st-effect-1">
+          <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
+            <button data-effect="st-effect-1" class="button_vertical" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
+
+          </div>
+
+          <div class="columnText">
+
+            <h1>
+              <b>Demostraciones de los ejercicios</b>
+            </h1>
+
+            <div class="excersice_aproach">
+              <p class="paragraph_excercises">Ejercicio 2</p>
+
+              <br>
+              1. Tenemos un Array con los siguientes valores: <br>
+              var array = [true, 5, false, "hola", "adios", 2];<br>
+              <br>
+              <dd> a. Determinar cuál de los dos elementos de texto es mayor  <br>
+              <br>
+               b. Utilizando exclusivamente los dos valores booleanos del Array,<br>
+
+              determinar los operadores necesarios para obtener un resultado true y <br>
+              otro resultado false<br>
+              <br>
+              <dd>c. Determinar el resultado de las cinco operaciones matemáticas 
+              realizadas con los dos elementos numéricos</dd><br>
+              <br>
+              </p>
+            </div>
+
+            <p>
+
+            </p>
+
+
+            <button onclick="mostrar()"> Respuesta </button>
+            <button onclick="cerrar()">Borrar</button>
+            <p id="parrafo2"></p>
+
+            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
+              var array = [true, 5, false, "hola", "adios", 2];<br>
+
+              <strong> Cual de los 2 elementos de texto es mayor</strong><br>
+
+              <br>
+              Si el resultado es <strong>true</strong>, el primer texto es mayor<br>
+              var resultado = array[3] > array[4];<br>
+              alert(resultado);<br>
+              <br>
+              <br>
+
+              <strong>Combinar valores booleanos<br></strong>
+              var valor1 = array[0];<br>
+              var valor2 = array[2];<br>
+              <br>
+              <strong>Obtener un resultado TRUE</strong><br>
+              var resultado = valor1 || valor2;<br>
+              alert(resultado);<br>
+              <br>
+              <strong>Obtener un resultado FALSE</strong><br>
+              resultado = valor1 && valor2;<br>
+              alert(resultado);<br>
+              <br>
+              <strong> Operaciones matemáticas</strong><br>
+              var num1 = array[1];<br>
+              var num2 = array[5];<br>
+              <br>
+              var suma = num1 + num2;<br>
+              alert(suma);<br>
+              <br>
+              var resta = num1 - num2;<br>
+              alert(resta);<br>
+              <br>
+              var multiplicacion = num1 * num2;<br>
+              alert(multiplicacion);<br>
+              <br>
+              var division = num1 / num2;<br>
+              alert(division);<br>
+              <br>
+              var modulo = num1 % num2;<br>
+              alert(modulo);<br>
+
+
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- /main -->
+  </div>
+  <!-- /st-content-inner -->
+  </div>
+  <!-- /st-content -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/jss.js"></script>
+</body>
+
+</html>
