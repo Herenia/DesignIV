@@ -1,53 +1,32 @@
+let isShow = false;
+$(document).ready(()=>{ /*Fundamental siempre poner las funciones dentro de esto, y si es posible las variables para
+                          evitar problemas con funciones que requieran uso de elementos del HTML que no se hayan cargado
+                          o que no se hayan cargado correctamente. */
 
+  //console.log("Pagina cargada");
 
-var click = document.querySelectorAll('div button');
-var menu = document.querySelector('#st-container');
-var pusher = document.querySelector('.st-pusher');
-// to store the corresponding effect
-var effect;
+  // $("#mostrar").click(()=>{  // Borrar a la hora de entregar 
+  //   //console.log("Funciona");
+  //   $("#flotante").slideDown("slow");
+  // });
 
-// adding a click event to all the buttons
-for (var i = 0; i < click.length; i++) {
-  click[i].addEventListener('click', addClass)
+  // $("#cerrar").click(()=>{  // Borrar a la hora de entregar
+  //   //console.log("Funciona");
+  //   $("#flotante").slideUp("slow");
+  // });
 
-pusher.addEventListener('click', closeMenu())}
+  $("#showIndex").click(()=>{
+    if (!isShow){
+      //console.log("no show");
+      $("#menu-1").animate({left: '220px'}, 200); 
+      isShow = true;
+    } else {
+      //console.log("show");
+      $("#menu-1").animate({left: '0px'}, 200);
+      isShow = false;
+    }
+    //console.log(isShow);
+    //Usar numeros en un ID es considerado una mala práctica, sólo ayudaría con clases.
+  });
+});
 
-
-
-
-function addClass(e) {
-  // to get the correct effect
-  effect = e.target.getAttribute('data-effect');
-  // adding the effects
-  menu.classList.toggle(effect);
-  menu.classList.toggle('st-menu-open');
-  
-  // console.log(e.target.getAttribute('data-effect'));
-}
-
-function closeMenu(e) {
-  // if the click target has this class then we close the menu by removing all the classes
-  if (e.target.classList.contains('st-pusher')) {
-    menu.classList.toggle(effect);
-    menu.classList.toggle('st-menu-open');
-    // console.log(el.target);
-  } 
-}
-
-
-//-----------------------CARROUSELL-------------------------------------//
-
-
-
-
-// EJERCICIOS
-
-function mostrar() {
-  div = document.getElementById('flotante');
-  div.style.display = '';
-}
-
-function cerrar() {
-  div = document.getElementById('flotante');
-  div.style.display = 'none';
-}

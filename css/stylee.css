@@ -2,7 +2,14 @@
 *::after,
 *::before {
 	
-	
+}
+/* AGREGADOS POR JOSE MANUEL (eliminar estos comentarios al entregar) */
+h1{
+	font-size: 2em; /* Tuve que agregar esto porque sino bootstrap dañaba el tamaño de los h1*/
+}
+
+#contenidoModal {
+	background-color: #05290f;
 }
 
 
@@ -232,7 +239,7 @@ body {
 
 .st-menu {
 	position: absolute;
-	top: 0;
+	top: -17px;
 	left: 0;
 	z-index: 100;
 	visibility: hidden;
@@ -313,8 +320,8 @@ body {
 /* Effect 1: Slide in on top */
 .st-menu.st-effect-1{
 	margin-top: 100px;
-height: 100vh;
-width: 230px;
+    height: 87.5vh;  /* CAMBIO POR JOSE MANUEL: cambié de 100 a 72vh para que no se vea el scroll feo al llamar al menú. */
+    width: 230px;
 }
 .st-effect-1.st-menu {
 	visibility: visible;
