@@ -26,7 +26,6 @@ $(document).ready(()=>{ /*Fundamental siempre poner las funciones dentro de esto
       isShow = false;
     }
     //console.log(isShow);
-    //Usar numeros en un ID es considerado una mala práctica, sólo ayudaría con clases.
   });
 });
 

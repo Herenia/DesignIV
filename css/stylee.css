@@ -12,6 +12,11 @@ h1{
 	background-color: #05290f;
 }
 
+.modalMayor{
+	width: 530px; 
+	margin-left: -30px;
+}
+
 
 *{
     margin: 0;
