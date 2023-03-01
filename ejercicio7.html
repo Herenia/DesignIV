@@ -147,6 +147,7 @@
                       }<br>
                       }<br>
             </p>
+            <p style="text-align: center;">------------ RESULTADO DEMOSTRATIVO ------------</p>
           </div>
         </div>
         <div class="modal-footer">
@@ -159,5 +160,40 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="./js/jquery-3.6.3.min.js"></script>
   <script src="js/jss.js"></script>
+  <script type="text/javascript"> 
+    var oculto = 0; 
+    var intentos = 1; 
+    var N = 0; 
+    oculto = Math.floor(Math.random() * 11); //genera un numero entre  
+
+   $("#mostrar").click(()=>{
+    while (intentos < 6) { 
+        N = parseInt(prompt("Introduce un numero entre 0 y 10 : ", 0)); 
+        if (N == oculto) { 
+          alert("<<ENHORABUENA HAS ADIVINADO EL NUMERO>>" + oculto + "!!!"); 
+          $("#flotante").append(`<BR><B id="youWin">NUMERO TECLEADO: ${N}, INTENTO: ${intentos}.</B > `); 
+          intentos = 0;
+          break; 
+        } else { 
+        if (N > oculto) { 
+          alert("<<INTRODUCE UN NUMERO MENOR>>"); 
+        } else { 
+          alert("<<INTRODUCE UN NUMERO MAYOR>>"); 
+        } 
+        intentos++; 
+        if (intentos == 6) {
+          alert("<<<LO SIENTO HAS PERDIDO>>>"); 
+          $("#flotante").append(`<BR><B id="youWin">No se logro el objetivo.</B > `); 
+          intentos = 1;
+        }
+        } 
+    } 
+   });
+
+   $("#modalEjercicio").blur(()=>{
+    $("#youWin").remove();
+    oculto = Math.floor(Math.random() * 11);
+   });
+</script> 
 </body>
 </html>
