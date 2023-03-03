@@ -3,9 +3,9 @@
 *::before {
 	
 }
-/* AGREGADOS POR JOSE MANUEL (eliminar estos comentarios al entregar) */
+
 h1{
-	font-size: 2em; /* Tuve que agregar esto porque sino bootstrap dañaba el tamaño de los h1*/
+	font-size: 2em; 
 }
 
 #contenidoModal {
@@ -194,15 +194,6 @@ div#slider figure {
 	list-style: none;
 }
 
-/* .st-menu h2 {
-	margin: 0;
-	padding: 1em;
-	color: rgba(0,0,0,0.4);
-	text-shadow: 0 0 1px rgba(0,0,0,0.1);
-	font-weight: 300;
-	font-size: 2em;
-} */
-
 .st-menu h2{
 	text-align: center;
     margin: 0;
@@ -242,7 +233,7 @@ div#slider figure {
 /* Effect 1: Slide in on top */
 .st-menu.st-effect-1{
 	margin-top: 100px;
-    height: 87.5vh;  /* CAMBIO POR JOSE MANUEL: cambié de 100 a 72vh para que no se vea el scroll feo al llamar al menú. */
+    height: 87.5vh; 
     width: 230px;
 }
 .st-effect-1.st-menu {
@@ -261,13 +252,7 @@ div#slider figure {
 	display: none;
 }
 
-
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-
-
-
-
-
 
 body {
 	
@@ -276,18 +261,6 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	
 }
-
-/* a {
-	text-decoration: none;
-	color: #48a770;
-	outline: none;
-}
-
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-} */
-
 
 .codrops-header {
 
@@ -342,8 +315,6 @@ width: 50%;
 	display: block;
 	float: left;
 }
-
-
 
 
 .main {
@@ -515,6 +486,5 @@ margin-left: 60rem;
 }
 
 .respuesta_ejercicio1{
-	
 	background-color: lightblue;
 }
