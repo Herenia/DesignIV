@@ -2,9 +2,20 @@
 *::after,
 *::before {
 	
-	
 }
 
+h1{
+	font-size: 2em; 
+}
+
+#contenidoModal {
+	background-color: #05290f;
+}
+
+.modalMayor{
+	width: 530px; 
+	margin-left: -30px;
+}
 
 *{
     margin: 0;
@@ -18,221 +29,129 @@ body {
     min-height: 100%;
 	background: #f3efe0;
 }
+#slider{
+    width: 500px;
+    height:300px;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+	margin-top: -190px;
+}
+
+div#slider { overflow: hidden; border: 5px solid green; }
+div#slider figure img { width: 20%; height:100%;  float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+  height: 100%;
+}
+
+.btn-next, .btn-prev{
+  position: absolute;
+  opacity: 0.3;
+  top: 30%;
+  cursor: pointer;
+  color: white;
+  background-color: #05290f;
+  padding: 20px;
+  font-size: 50px;
+  border:none;
+}
+.btn-next:hover, .btn-prev:hover{
+	opacity: 1;
+	transition-duration: .5s;
+}
+
+.btn-prev{
+  left: 0px;
+}
+.btn-next{
+  right: 0px;
+}
+
  /* -----------------------------------------------------------*/ 
  /* --------------------HORIZONTAL BAR------------------------*/ 
  /* ---------------------------------------------------------*/ 
   /* -------------------------------------------------------*/ 
 
   @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-  :root {
-	--background: rgba(30, 112, 55, 0.9);
-  }
-
- .navbar_horizontal_header_label{
-	background: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-	
-	
-}
-
-.nav-toggle {
-	display: none;
-  }
-
-.nav-toggle-label{
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 1em;
-	height: 100%;
+  .navBarHome{
+	position: fixed;
 	display: flex;
-	align-items: center;
-  }
-
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-	display: block;
-	background: rgb(255, 255, 255);
-	height: 2px;
-	width: 2em;
-	border-radius: 2px;
-	position: relative;
-  }
-	
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-	content: '';
-	position: absolute;
-  }
-  
-  .nav-toggle-label span::before {
-	bottom: 7px;
-  }
-  
-  .nav-toggle-label span::after {
-	top: 7px;
-  }
-
-   .nav_horizontal_label{
-	position: absolute;
-	text-align: left;
-	top: 100%;
-	left: 0;
-	background: var(--background);
+	justify-content: center;
 	width: 100%;
-	transform: scale(1,0);
-	transform-origin: top;
-	transition: transform 400ms ease-in-out;
-   }
-  .nav_li_horizontal_bar{
-	margin-bottom: 1em;
-	margin-left: 1em;
+	height: 82.21px;
+	background-color: rgba(30, 112, 55, 0.97);
+	z-index: 1000;
+	justify-content: space-evenly;
   }
 
-  .nav_li_horizontal_bar:hover{
-	color: rgb(0, 0, 0);
+  .logoHeader {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
   }
-  
-  .nav_a_horizontal_bar{
-	color: white;
-	text-decoration: none;
-	font-size: 1.2rem;
+
+  .logoHeader img{
+	height: 4em;
+	width: 4em;
+  }
+
+  .logoHeader h1{
+	color:#05290f;
+	margin: 0;
+	font-weight: 800;
+	font-size: 4em;
+  }
+  .menuCentrado{
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .navBarHome ul{
+	font-size: 1.5em;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 45%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	list-style: none;
 	text-transform: uppercase;
-	opacity: 0;
-	transition: opacity 150ms ease-in-out;
   }
 
-
-  /*.nav-toggle:checked ~ nav {
-    transform: scale(1,1);
-}
-
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
- */ 
- 
- .logo_h1{
-	margin-bottom: 0.1em;
-	align-items: center;
-	align-items: center;
+  .navBarHome ul li {
 	display: flex;
-	margin-left: 4em;
-	padding: 1vh;
- }
- 
- .logo_img{
-	height: 2em;
-	width: 2em;
-	display: inline-block;
-	margin-left:  1em;
 	align-items: center;
-	
- }
- @media screen and (min-width: 800px) {
-	.nav-toggle-label {
-	  display: none;
-	}}
-
-
-
-  .content {
-	height: 200vh;
-	background-image: url(//unsplash.it/1000/1000);
-	background-color: #333;
-	background-blend-mode: multiply;
-	background-size: cover;
-	display: grid;
-	place-items: center;
-
-	
+  }
+  .navBarHome ul li a{
+	text-decoration: none;
+	color: white;
+  }
+  .navBarHome ul li a:hover{
+	color: greenyellow;
+	transition-duration: .5s;
   }
 
-  .logo {
-    grid-column: 2 / 3;
-  }
-
-
-  .nav_horizontal_label{
-	
-	   position: relative;
-		text-align: left;
-		transition: none;
-		transform: scale(1,1);
-		background: none;
-		top: initial;
-		left: initial;
-		
-		
-		grid-column: 3 / 4;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	  
-  }
-
-
-  .nav_ul_horizontal_label{
-	display: flex;
-	
-		margin: 0;
-		padding: 0;
-	   list-style: none;
-	
-  }
-  
-  .nav_li_horizontal_bar{
-	margin-left: 3em;
-    margin-bottom: 0;
-  }
-  .nav_a_horizontal_bar{
-	opacity: 1;
-    position: relative;
-  }
-
-  .nav_a_horizontal_bar a::before{
-	content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    
-    transition: transform ease-in-out 250ms;
-  }
-
-  .nav_a_horizontal_bar:hover::before{
-	transform: scale(1, 1)
-  }
  /* -----------------------------------------------------------*/ 
  /* --------------------SIDE BAR------------------------------*/ 
  /* ---------------------------------------------------------*/ 
   /* -------------------------------------------------------*/ 
 
-
-
-
 .st-content {
-	overflow-y: scroll;
-	
-
+	overflow-y: auto;
 }
 
 .st-menu {
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: -17px;
 	left: 0;
 	z-index: 100;
 	visibility: hidden;
@@ -241,7 +160,7 @@ body {
 	background: #48a770;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	
+	overflow: auto;
 }
 
 .st-menu::after {
@@ -275,13 +194,14 @@ body {
 	list-style: none;
 }
 
-.st-menu h2 {
-	margin: 0;
-	padding: 1em;
-	color: rgba(0,0,0,0.4);
-	text-shadow: 0 0 1px rgba(0,0,0,0.1);
-	font-weight: 300;
-	font-size: 2em;
+.st-menu h2{
+	text-align: center;
+    margin: 0;
+    padding: 0.1em 0.9em;
+    color: rgba(0,0,0,0.4);
+    text-shadow: 0 0 1px rgb(0 0 0 / 10%);
+    font-weight: 300;
+    font-size: 2em;
 }
 
 .st-menu ul li a {
@@ -313,8 +233,8 @@ body {
 /* Effect 1: Slide in on top */
 .st-menu.st-effect-1{
 	margin-top: 100px;
-height: 100vh;
-width: 230px;
+    height: 87.5vh; 
+    width: 230px;
 }
 .st-effect-1.st-menu {
 	visibility: visible;
@@ -332,13 +252,7 @@ width: 230px;
 	display: none;
 }
 
-
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-
-
-
-
-
 
 body {
 	
@@ -347,18 +261,6 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	
 }
-
-a {
-	text-decoration: none;
-	color: #48a770;
-	outline: none;
-}
-
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-}
-
 
 .codrops-header {
 
@@ -413,8 +315,6 @@ width: 50%;
 	display: block;
 	float: left;
 }
-
-
 
 
 .main {
@@ -586,6 +486,5 @@ margin-left: 60rem;
 }
 
 .respuesta_ejercicio1{
-	
 	background-color: lightblue;
 }

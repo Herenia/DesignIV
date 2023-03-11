@@ -5,63 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="stylesheet" href="js/jss.js">
+  <title>Ejercicio 2</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="img/*">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
   <link rel="stylesheet" href="css/stylee.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/jss.js"></script>
-  <link rel="stylesheet" href="sss/sss.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="sss/sss.js"></script>
-  <script>
-
-  </script>
-
-
-
 </head>
 
 <body>
-
-  <header class="navbar_horizontal_header_label">
-    <h1 class="logo_h1"> SEAS <img class="logo_img" src="img/logo.png" alt=""></h1>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav class="nav_horizontal_label">
-      <ul class="nav_ul_horizontal_label">
-        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> HOME </a></li>
-        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> About </a></li>
-        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" href="#"> Blog </a></li>
-        <li class="nav_li_horizontal_bar"><a class="nav_a_horizontal_bar" ref="#"> Contact </a></li>
+  <header class="navBarHome">
+    <div class="menuCentrado">
+      <div class="logoHeader">
+        <button id="showIndex" class="btn btn-success"><i class="fa-solid fa-bars"></i></button>
+        <img src="./img/seas.png" alt="uniLogo">
+        <h1>SEAS</h1>
+      </div>
+      <ul>
+        <li class="headerOps"><a href="./index.html"> HOME </a></li>
+        <li class="headerOps"><a href="#"> About </a></li>
+        <li class="headerOps"><a href="#"> Blog </a></li>
+        <li class="headerOps"><a href="#"> Contact </a></li>
       </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
+    </div>
   </header>
-
-
   <div id="st-container" class="st-container">
-
     <nav class="st-menu st-effect-1" id="menu-1">
       <h2 class="icon icon-lab">Java Script</h2>
       <ul class="">
-        <li><a class="icon icon-data" href="#">Ejercicio 1</a></li>
-        <li><a class="icon icon-location" href="#">Ejercicio 2</a></li>
-        <li><a class="icon icon-study" href="#">Ejercicio 3</a></li>
-        <li><a class="icon icon-photo" href="#">Ejercicio 4</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 5</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 6</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 7</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 8</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 9</a></li>
-        <li><a class="icon icon-wallet" href="#">Ejercicio 10</a></li>
+        <li><a class="icon icon-data" href="./ejercicio1.html">Ejercicio 1</a></li>
+        <li><a class="icon icon-location" href="./ejercicio2.html">Ejercicio 2</a></li>
+        <li><a class="icon icon-study" href="./ejercicio3.html">Ejercicio 3</a></li>
+        <li><a class="icon icon-photo" href="./ejercicio4.html">Ejercicio 4</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio5.html">Ejercicio 5</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio6.html">Ejercicio 6</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio7.html">Ejercicio 7</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio8.html">Ejercicio 8</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio9.html">Ejercicio 9</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio10.html">Ejercicio 10</a></li>
+        <li><a class="icon icon-wallet" href="./ejercicio11.html">Ejercicio 11</a></li>
       </ul>
     </nav>
   </div>
-
 
   <div class="st-pusher">
 
@@ -75,19 +58,13 @@
         </header>
         <div class="main clearfix" data-effect="st-effect-1">
           <div id="st-trigger-effects" class="column" data-effect="st-effect-1">
-            <button data-effect="st-effect-1" class="button_vertical" onclick="addClass(e)"> <i class="fa-solid fa-angles-right"></i></button>
-
           </div>
-
           <div class="columnText">
-
             <h1>
               <b>Demostraciones de los ejercicios</b>
             </h1>
-
             <div class="excersice_aproach">
               <p class="paragraph_excercises">Ejercicio 2</p>
-
               <br>
               1. Tenemos un Array con los siguientes valores: <br>
               var array = [true, 5, false, "hola", "adios", 2];<br>
@@ -95,7 +72,6 @@
               <dd> a. Determinar cuál de los dos elementos de texto es mayor  <br>
               <br>
                b. Utilizando exclusivamente los dos valores booleanos del Array,<br>
-
               determinar los operadores necesarios para obtener un resultado true y <br>
               otro resultado false<br>
               <br>
@@ -104,96 +80,81 @@
               <br>
               </p>
             </div>
-
             <p>
-
             </p>
-
-
-            <button onclick="mostrar()"> Respuesta </button>
-            <button onclick="cerrar()">Borrar</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalEjercicio" id="mostrar">Respuesta</button>
+            <!--<button id="cerrar">Cerrar</button>-->
             <p id="parrafo2"></p>
-
-            <div id="flotante" style="display:none;" class="respuesta_ejercicio1">
-              var array = [true, 5, false, "hola", "adios", 2];<br>
-
-              <strong> Cual de los 2 elementos de texto es mayor</strong><br>
-
-              <br>
-              Si el resultado es <strong>true</strong>, el primer texto es mayor<br>
-              var resultado = array[3] > array[4];<br>
-              alert(resultado);<br>
-              <br>
-              <br>
-
-              <strong>Combinar valores booleanos<br></strong>
-              var valor1 = array[0];<br>
-              var valor2 = array[2];<br>
-              <br>
-              <strong>Obtener un resultado TRUE</strong><br>
-              var resultado = valor1 || valor2;<br>
-              alert(resultado);<br>
-              <br>
-              <strong>Obtener un resultado FALSE</strong><br>
-              resultado = valor1 && valor2;<br>
-              alert(resultado);<br>
-              <br>
-              <strong> Operaciones matemáticas</strong><br>
-              var num1 = array[1];<br>
-              var num2 = array[5];<br>
-              <br>
-              var suma = num1 + num2;<br>
-              alert(suma);<br>
-              <br>
-              var resta = num1 - num2;<br>
-              alert(resta);<br>
-              <br>
-              var multiplicacion = num1 * num2;<br>
-              alert(multiplicacion);<br>
-              <br>
-              var division = num1 / num2;<br>
-              alert(division);<br>
-              <br>
-              var modulo = num1 % num2;<br>
-              alert(modulo);<br>
-
-
-
-            </div>
-
-
-
-
-
-
           </div>
-
-
-
-
         </div>
-
-
-
       </div>
-
-
     </div>
-
     <!-- /main -->
   </div>
   <!-- /st-content-inner -->
   </div>
   <!-- /st-content -->
   </div>
-
-
-
-
-
-
-
-
+  <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="modalEjercicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content" id="contenidoModal">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ejercicio 2</h1>
+      </div>
+      <div class="modal-body">
+        <div id="flotante" class="respuesta_ejercicio1">
+        <p style="text-align: center">--------------------SCRIPT--------------------</p>
+          var array = [true, 5, false, "hola", "adios", 2];<br>
+          <strong> Cual de los 2 elementos de texto es mayor</strong><br>
+          <br>
+          Si el resultado es <strong>true</strong>, el primer texto es mayor<br>
+          var resultado = array[3] > array[4];<br>
+          alert(resultado);<br>
+          <br>
+          <br>
+          <strong>Combinar valores booleanos<br></strong>
+          var valor1 = array[0];<br>
+          var valor2 = array[2];<br>
+          <br>
+          <strong>Obtener un resultado TRUE</strong><br>
+          var resultado = valor1 || valor2;<br>
+          alert(resultado);<br>
+          <br>
+          <strong>Obtener un resultado FALSE</strong><br>
+          resultado = valor1 && valor2;<br>
+          alert(resultado);<br>
+          <br>
+          <strong> Operaciones matemáticas</strong><br>
+          var num1 = array[1];<br>
+          var num2 = array[5];<br>
+          <br>
+          var suma = num1 + num2;<br>
+          alert(suma);<br>
+          <br>
+          var resta = num1 - num2;<br>
+          alert(resta);<br>
+          <br>
+          var multiplicacion = num1 * num2;<br>
+          alert(multiplicacion);<br>
+          <br>
+          var division = num1 / num2;<br>
+          alert(division);<br>
+          <br>
+          var modulo = num1 % num2;<br>
+          alert(modulo);<br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Agrego scripts de bootstrap, jquery y jss-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.6.3.min.js"></script>
   <script src="js/jss.js"></script>
 </body>
 
