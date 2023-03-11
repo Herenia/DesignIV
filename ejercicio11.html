@@ -169,10 +169,29 @@
                 return true;<br>
                 }<br>
             </p>
+            <form name="formulario" id="ejercicioFormulario">
+              <h1 id="formH1">Formulario de demostracion</h1>
+              <div class="inputYErrores">
+                <input type="text" name="nombApe" placeholder="Nombre y apellido">
+                <span id="eNombre" class="errorSpan">¡Error!: El nombre y apellido no debe contener numeros</span>
+              </div>
+              <div class="inputYErrores">
+                <input type="number" name="edad" placeholder="Edad">
+                <span id="eEdad" class="errorSpan">¡Error!: no debe contener letras, no debe ser un numero negativo y mucho menos mayor a 120</span>
+              </div>
+              <div class="inputYErrores">
+                <input type="number" name="codePostal" placeholder="Codigo Postal">
+                <span id="eCodePostal" class="errorSpan">¡Error!: Solo debe contener numeros, y un maximo de 5 digitos</span>
+              </div>
+              <div id="enviarFormHeight">
+                <input id="enviarForm" class="btn btn-success" type="button" value="Enviar">
+                <h2 id="msgSuccess">¡Datos enviados!</h2>
+              </div>
+            </form>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          <button id="btn-cerrar" type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -181,5 +200,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="./js/jquery-3.6.3.min.js"></script>
   <script src="js/jss.js"></script>
+  <script>
+    
+  </script>
 </body>
 </html>
